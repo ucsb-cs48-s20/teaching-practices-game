@@ -1,11 +1,11 @@
 import Layout from "../components/Layout";
 
-function HomePage(props) {
+function Page1(props) {
   return (
     <Layout>
-      <p>This is the home page</p>
+      <p>This is page 1.</p>
     </Layout>
   );
 }
 
-export default HomePage;
+export default Page1;
