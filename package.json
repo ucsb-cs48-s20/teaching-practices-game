@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fix:format": "prettier --write \"**/*.{js,json,md}\" --ignore-path .gitignore"
+    "fix:format": "prettier --write \"**/*.{js,json,md}\" --ignore-path .gitignore",
+    "cy:run": "cypress run",
+    "test": "npm-run-all test:*",
+    "test:format": "prettier --check \"**/*.{js,json,md}\" --ignore-path .gitignore",
+    "test:cypress": "start-server-and-test dev 3000 cy:run"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -16,6 +20,11 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "@rckeller/cypress-unfetch": "^1.0.1",
+    "cypress": "^4.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "start-server-and-test": "^1.10.11"
   }
 }
