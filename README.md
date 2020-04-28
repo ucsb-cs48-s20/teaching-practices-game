@@ -4,14 +4,23 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
 These likely will not work until initial configuration is done per instructions below.
 
-| Command                | Description                                  |
-| ---------------------- | -------------------------------------------- |
-| `npm install`          | Install Dependencies                         |
-| `npm run dev`          | Runs locally                                 |
-| `npm run test`         | Runs entire test suite                       |
-| `npm run test:cypress` | Runs Cypress integration tests               |
-| `npm run test:cypress` | Runs `prettier` format tests                 |
-| `npm run fix:format`   | Reformats all project files using `prettier` |
+| Command                | Description                                       |
+| ---------------------- | ------------------------------------------------- |
+| `npm install`          | Install Dependencies                              |
+| `npm run dev`          | Runs locally in development mode                  |
+| `npm run start`        | Runs in production mode (requires `PORT` env var) |
+| `npm run test`         | Runs entire test suite                            |
+| `npm run test:cypress` | Runs Cypress integration tests                    |
+| `npm run test:cypress` | Runs `prettier` format tests                      |
+| `npm run fix:format`   | Reformats all project files using `prettier`      |
+
+Note that while no environment variables are required to run
+`npm run dev`, running `npm run start` requires that the `PORT` environment
+variable be set first, e.g.
+
+```
+export PORT=3000
+```
 
 # Initial Configuration
 
