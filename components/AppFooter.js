@@ -26,7 +26,7 @@ function AppFooter() {
                 <a>this tutorial</a>
               </Link>
               . Check out the source code on{" "}
-              <Link href="https://github.com/pconrad/nextjs-tutorial">
+              <Link href="https://github.com/ucsb-cs48-s20/cs48-s20-nextjs-tutorial">
                 <a>GitHub</a>
               </Link>
               {"."}
