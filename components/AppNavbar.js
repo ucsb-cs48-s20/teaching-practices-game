@@ -15,8 +15,8 @@ function AppNavbar(props) {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Nav className="mr-auto">
-            <Link href="/page1" passHref={true}>
-              <Nav.Link>Page 1</Nav.Link>
+            <Link href="/cards" passHref={true}>
+              <Nav.Link>Cards</Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>
