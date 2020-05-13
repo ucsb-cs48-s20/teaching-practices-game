@@ -2,7 +2,13 @@ import Layout from "../../components/Layout";
 import Head from "next/head";
 import BootstrapTable from "react-bootstrap-table-next";
 
-import getCards from "../../data/cards";
+import getCards from "../../data/cards"
+
+export const getServerSideProps = async ({ req, res }) => {
+  const ssr = { props: {} };
+  ssr.props.initialData = (await getCards());
+  return ssr;
+};
 
 function getColumns() {
   return [
@@ -30,14 +36,14 @@ function getColumns() {
 }
 
 function Cards(props) {
-
+  const { initialData } = props;
   return (
     <Layout>
       <Head>
         <title>Cards Index</title>
       </Head>
       <h1>Cards Index</h1>
-      <BootstrapTable keyField="number" data={getCards()} columns={getColumns()} />
+      <BootstrapTable keyField="number" data={initialData} columns={getColumns()} />
       <style jsx global>{`
         .table {
           overflow: auto;

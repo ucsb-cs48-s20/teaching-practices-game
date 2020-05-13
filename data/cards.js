@@ -2,6 +2,16 @@ export default function getCards() {
   return cards;
 }
 
+export function getIndexedCards() {
+  if ("indexedCards" in getIndexedCards) {
+    return getIndexedCards.indexedCards;
+  }  
+  
+  getIndexedCards.indexedCards={};
+  cards.forEach( e => getIndexedCards.indexedCards[e.number]=e);
+  return getIndexedCards.indexedCards;
+}
+
 const cards = [
   {
     number: 1,
