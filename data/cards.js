@@ -5,10 +5,10 @@ export default function getCards() {
 export function getIndexedCards() {
   if ("indexedCards" in getIndexedCards) {
     return getIndexedCards.indexedCards;
-  }  
-  
-  getIndexedCards.indexedCards={};
-  cards.forEach( e => getIndexedCards.indexedCards[e.number]=e);
+  }
+
+  getIndexedCards.indexedCards = {};
+  cards.forEach((e) => (getIndexedCards.indexedCards[e.number] = e));
   return getIndexedCards.indexedCards;
 }
 
@@ -426,5 +426,3 @@ const cards = [
       "I would ask why they would assume we would need to water down the content to increase the diversity in our classes. I would challenge the assumption that more engaging and accessible content can’t still accomplish the same learning goals. I’d encourage them to be more explicit when we talk about diversity to fight the taboos of talking about race, class, gender, and sexual orientation.",
   },
 ];
-
-

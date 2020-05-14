@@ -6,9 +6,9 @@ import getCards from "../../../data/cards";
 export default (req, res) => {
   const {
     query: { num },
-  } = req
+  } = req;
 
   const cards = getCards();
-  
-  res.end(JSON.stringify(cards))
-}
+
+  res.end(JSON.stringify(cards));
+};

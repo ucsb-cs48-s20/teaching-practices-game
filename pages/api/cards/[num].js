@@ -1,12 +1,12 @@
-// /api/cards/[num] 
+// /api/cards/[num]
 // returns the JSON representation of card with that number
 
-import {getCards, getIndexedCards} from "../../../data/cards";
+import { getCards, getIndexedCards } from "../../../data/cards";
 
 export default (req, res) => {
   const {
     query: { num },
-  } = req
+  } = req;
 
   const indexedCards = getIndexedCards();
   let card;
@@ -17,4 +17,4 @@ export default (req, res) => {
   }
 
   res.end(JSON.stringify(card));
-}
+};

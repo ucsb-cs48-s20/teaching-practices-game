@@ -9,12 +9,8 @@ function ShowCard(props) {
   return (
     <>
       <div>
-          <p>
-          Here's card {card.number}:
-          </p>
-          <pre>
-             {JSON.stringify(card, null, "\t")}
-          </pre>
+        <p>Here's card {card.number}:</p>
+        <pre>{JSON.stringify(card, null, "\t")}</pre>
       </div>
     </>
   );

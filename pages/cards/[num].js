@@ -1,14 +1,14 @@
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 import Layout from "../../components/Layout";
 import ShowCard from "../../components/ShowCard";
 
 import Head from "next/head";
-import { getIndexedCards } from "../../data/cards"
+import { getIndexedCards } from "../../data/cards";
 
 export const getServerSideProps = async ({ req, res }) => {
   const ssr = { props: {} };
-  ssr.props.indexedCards = (await getIndexedCards());
+  ssr.props.indexedCards = await getIndexedCards();
   return ssr;
 };
 
@@ -23,9 +23,7 @@ function Cards(props) {
       <Head>
         <title>Display Card</title>
       </Head>
-      <ShowCard card={card}>
-      </ShowCard>
-      
+      <ShowCard card={card}></ShowCard>
     </Layout>
   );
 }
