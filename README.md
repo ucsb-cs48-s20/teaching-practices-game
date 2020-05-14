@@ -13,6 +13,7 @@ These likely will not work until initial configuration is done per instructions 
 | `npm run test:cypress` | Runs Cypress integration tests                    |
 | `npm run test:cypress` | Runs `prettier` format tests                      |
 | `npm run fix:format`   | Reformats all project files using `prettier`      |
+| `npm run storybook`    | Run React Storybook (made available at localhost:6006  |
 
 Note that while no environment variables are required to run
 `npm run dev`, running `npm run start` requires that the `PORT` environment
