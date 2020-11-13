@@ -1,9 +1,12 @@
 import Layout from "../components/Layout";
 
+import RandomCard from "../components/RandomCard";
+
+
 function HomePage(props) {
   return (
     <Layout>
-      <p>This is the home page</p>
+      <RandomCard />
     </Layout>
   );
 }

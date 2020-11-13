@@ -10,14 +10,14 @@ function AppNavbar(props) {
     <Navbar bg="light" expand="lg">
       <Container>
         <Link href="/" passHref={true}>
-          <Navbar.Brand>Next.js Demo App</Navbar.Brand>
+          <Navbar.Brand>Teaching Practices Game</Navbar.Brand>
         </Link>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Nav className="mr-auto">
-            <Link href="/cards" passHref={true}>
+            {/* <Link href="/cards" passHref={true}>
               <Nav.Link>Cards</Nav.Link>
-            </Link>
+            </Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

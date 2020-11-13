@@ -30,6 +30,14 @@ function AppFooter() {
                 <a>GitHub</a>
               </Link>
               {"."}
+              . The cards are based on{" "}
+              <Link href="https://www.csteachingtips.org/cards">
+                <a>this game</a>
+              </Link>
+              {"."}
+
+
+
             </p>
           </Card.Text>
         </Card.Body>
